@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muséo Gallery</title>
+    <link rel="stylesheet" href="submissions.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Segoe+UI:wght@400;700&family=Iowan+Old+Style&family=Inika&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+</head>
+
+<body>
+    <div class="page-content">
+        <div class="header">
+            <div class="logo">
+                <img src="MGlogo.jpg" alt="logo">
+            </div>
+            <div class="headbar">
+                <div class="headtext">
+                    <span>MUSÉO</span>
+                </div>
+                <div class="navbar">
+                    <nav>
+                        <ul>
+                            <li><a href="home.html"><div class="hover-line">Home</div></a></li>
+                            <li><a href="gallery.html"><div class="hover-line">Gallery</div></a></li>
+                            <li><a href="submissions.html" class="active"><div class="hover-line-active">Submit your Work<div></a></li>
+                            <li><a href="profiles.html"><div class="hover-line">Meet the Artists</div></a></li>
+                            <li><a href="aboutus.html"><div class="hover-line">About Us</div></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="formInputContainer">
+            <form id="response">
+                <div class="option">
+                    <label for="fname">Name</label>
+                    <input type= "text" id="fname" name="fname" placeholder="First name"><br><br>
+                </div>
+
+                <div class="option">
+                    <label for="lname"></label>
+                    <input type="text" id="lname" name="lname" placeholder="Last name"><br><br>
+                </div>
+                
+                <label for="mail">School email</label>
+                <input type="email" id="email" name="email" placeholder="someone@place.com"><br><br>
+                
+                <label for="mail">Nationality</label>
+                <input type="text" id="nationality" name="nationality" placeholder="Eg. Ghana"><br><br>
+
+                <div class="option">
+                    <label for="uniLevel">Study level</label>
+                    <select id="uniLevel" name="uniLevel">
+                        <option value="O">Please select an option</option>
+                        <option value="1">Foundation Year</option>
+                        <option value="2">First Year</option>
+                        <option value="3"> Second Year</option>
+                        <option value="4">Third Year</option>
+                    </select><br><br><br>
+                </div>
+
+                <div class="option">
+                    <label for="socialmed">Enter social media</label>
+                    <input type="url" id="socialmed" name="socialmed" placeholder="Link to Instagram, LinkedIn, etc."><br><br>
+                </div><br>
+                
+                <div class="option">
+                    <label for="fileType">File type</label>
+                    <select id="fileType" name="fileType">
+                        <option value="0">Please select an option</option>
+                        <option value="1">Photo</option>
+                        <option value="2">Poem</option>
+                        <option value="3">Visual Art</option>
+                    </select><br><br><br>
+                </div>
+
+                <div class="option">
+                    <label for="phoneNum">Enter phone number</label>
+                    <input type="text" id="phoneNum" name="phoneNum" placeholder="+XXX(0)..."><br><br>
+                </div>
+
+                <label for="attachment">Upload your work</label>
+                <input type="file" id="attachment" name="attachment" accept=".jpg, .jpeg, .png, .pdf, .mp4, .avi, .mov, .wmv"><br><br>
+            
+                <label for="workTitle">Work title</label>
+                <input type="text" id="workTitle" name="workTitle" placeholder='Eg. "The Digital Divide"'><br><br>
+            
+                <label for="desc">Describe your work</label>
+                <textarea id="desc" name="desc" placeholder='Eg. "The artwork is divided into two distinct sections. One half is vibrant and full of digital symbols like computers, smartphones, and networks, representing the interconnected world. The other half is the barren, dark, or feature outdated technology, representing the disconnected and underprivileged sections of society."'></textarea><br><br>
+
+                <div class = "button-container">
+                    <button type="button" onclick="alert('Aborted.'); window.location.href='home.html'">Cancel</button> <!-- JavaScript here -->
+                    <div class="submit-button">
+                        <button type="submit" onclick="confirm('Are you sure you want to submit?')">Submit</button> <!-- and here -->
+                    </div>
+                </div>      
+            </form>
+        </div>   
+
+        <div class="background">
+            <img src="submissionimage.png" alt="Submission Image">
+        </div>
+    </div>
+
+    <footer>
+        <div class="credits">
+            <span>Developed by L.A.N.C.E. - Layola, Naura, Chioma and Ernest.<br>© 2024 MUSÉO. All rights reserved.</span>
+        </div>
+    </footer>
+</body>
+
+</html>
